@@ -8,10 +8,11 @@ pipeline {
     }
 
     stages {
+      
         stage('Checkout') {
             steps {
                 echo '📥 Checking out source code...'
-                git 'https://github.com/Mekala-Selvakumar/jenkins-javaapp.git'  // Replace with your Git repo URL
+                git branch: 'main' ,url: 'https://github.com/Mekala-Selvakumar/jenkins-javaapp.git'  // Replace with your Git repo URL
             }
         }
 
