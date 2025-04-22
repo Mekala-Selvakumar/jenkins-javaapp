@@ -2,12 +2,9 @@ pipeline {
     agent any
 
     tools {
-        jdk 'JDK 17'         // Must match the name configured in Jenkins Global Tools
-        maven 'Maven 3.9.9'  // Must match the configured Maven version
-    }
-
-    environment {
-        // You can define environment variables here if needed
+        jdk 'open_JDK17'         // Must match the name configured in Jenkins Global Tools
+    //    maven 'Maven 3.9.9'  // Must match the configured Maven version
+       maven 'MVN'
     }
 
     stages {
